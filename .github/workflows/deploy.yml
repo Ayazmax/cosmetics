@@ -31,6 +31,8 @@ jobs:
         host: ${{ secrets.CONTABO_HOST }}
         username: ${{ secrets.CONTABO_USERNAME }}
         key: ${{ secrets.CONTABO_SSH_KEY }}
+        port: 22
+        timeout: 60s
         script: |
           cd /var/www/cosmetics
           git pull origin main
