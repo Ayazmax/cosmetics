@@ -213,6 +213,7 @@ const BackgroundElements = styled.div`
   overflow: hidden;
 `;
 
+// eslint-disable-next-line no-unused-vars
 const FloatingCircle = styled(motion.div)`
   position: absolute;
   border-radius: 50%;

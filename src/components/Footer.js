@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { FiMail, FiSend, FiFacebook, FiTwitter, FiInstagram, FiYoutube, FiHeart } from 'react-icons/fi';
+import { FiSend, FiFacebook, FiTwitter, FiInstagram, FiYoutube, FiHeart } from 'react-icons/fi';
 
 const FooterSection = styled.footer`
   background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
@@ -280,33 +280,33 @@ const Footer = () => {
           <FooterColumn variants={itemVariants}>
             <h3>Quick Links</h3>
             <FooterLinks>
-              <FooterLink><a href="#">Home</a></FooterLink>
-              <FooterLink><a href="#">About Us</a></FooterLink>
-              <FooterLink><a href="#">Products</a></FooterLink>
-              <FooterLink><a href="#">Services</a></FooterLink>
-              <FooterLink><a href="#">Contact</a></FooterLink>
+              <FooterLink><a href="/">Home</a></FooterLink>
+              <FooterLink><a href="/">About Us</a></FooterLink>
+              <FooterLink><a href="/">Products</a></FooterLink>
+              <FooterLink><a href="/">Services</a></FooterLink>
+              <FooterLink><a href="/">Contact</a></FooterLink>
             </FooterLinks>
           </FooterColumn>
 
           <FooterColumn variants={itemVariants}>
             <h3>Products</h3>
             <FooterLinks>
-              <FooterLink><a href="#">Skincare</a></FooterLink>
-              <FooterLink><a href="#">Makeup</a></FooterLink>
-              <FooterLink><a href="#">Fragrances</a></FooterLink>
-              <FooterLink><a href="#">Hair Care</a></FooterLink>
-              <FooterLink><a href="#">Bath & Body</a></FooterLink>
+              <FooterLink><a href="/">Skincare</a></FooterLink>
+              <FooterLink><a href="/">Makeup</a></FooterLink>
+              <FooterLink><a href="/">Fragrances</a></FooterLink>
+              <FooterLink><a href="/">Hair Care</a></FooterLink>
+              <FooterLink><a href="/">Bath & Body</a></FooterLink>
             </FooterLinks>
           </FooterColumn>
 
           <FooterColumn variants={itemVariants}>
             <h3>Support</h3>
             <FooterLinks>
-              <FooterLink><a href="#">Help Center</a></FooterLink>
-              <FooterLink><a href="#">Shipping Info</a></FooterLink>
-              <FooterLink><a href="#">Returns</a></FooterLink>
-              <FooterLink><a href="#">Size Guide</a></FooterLink>
-              <FooterLink><a href="#">Contact Support</a></FooterLink>
+              <FooterLink><a href="/">Help Center</a></FooterLink>
+              <FooterLink><a href="/">Shipping Info</a></FooterLink>
+              <FooterLink><a href="/">Returns</a></FooterLink>
+              <FooterLink><a href="/">Size Guide</a></FooterLink>
+              <FooterLink><a href="/">Contact Support</a></FooterLink>
             </FooterLinks>
           </FooterColumn>
         </FooterContent>

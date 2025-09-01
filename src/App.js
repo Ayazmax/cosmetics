@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -17,7 +17,7 @@ const AppContainer = styled.div`
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <GlobalStyles />
       <AppContainer>
         <Navbar />
@@ -28,7 +28,7 @@ function App() {
         <Contact />
         <Footer />
       </AppContainer>
-    </Router>
+    </BrowserRouter>
   );
 }
 
