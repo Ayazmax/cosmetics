@@ -1,173 +1,121 @@
-# Luminary Beauty - Premium Cosmetics Portfolio
+# Luminary Beauty - Cosmetics Portfolio Website
 
-A beautiful, modern, and interactive portfolio website for a cosmetics company built with React JS. Features stunning animations, responsive design, and an elegant user interface.
+A beautiful and interactive portfolio website for a cosmetics company built with React JS.
 
-## ✨ Features
+## Features
 
-- **Modern Design**: Clean, elegant design with white and grey backgrounds
-- **Interactive Animations**: Smooth animations using Framer Motion
-- **Responsive Layout**: Fully responsive design for all devices
-- **Beautiful UI**: Attractive cosmetics-focused design with vibrant accent colors
-- **Smooth Scrolling**: Enhanced user experience with smooth scroll animations
-- **Professional Branding**: Company name "Luminary Beauty" with premium feel
+- **Modern Design**: Clean white and grey background with vibrant accent colors
+- **Responsive Layout**: Mobile-first design that works on all devices
+- **Smooth Animations**: Crispy animations using Framer Motion
+- **Interactive Elements**: Engaging user experience with hover effects
+- **Professional Look**: Attractive design suitable for cosmetics industry
 
-## 🎨 Design Elements
+## Sections
 
-- **Color Scheme**: White and grey backgrounds with vibrant accent colors
-- **Typography**: Modern fonts (Poppins + Playfair Display)
-- **Animations**: Crispy, smooth animations throughout the site
-- **Icons**: Beautiful icons from React Icons
-- **Gradients**: Elegant gradient effects for buttons and highlights
+- **Hero**: Eye-catching landing section with call-to-action
+- **About**: Company information and statistics
+- **Products**: Showcase of cosmetic products with filtering
+- **Services**: Premium services offered by the company
+- **Contact**: Contact form and information
+- **Footer**: Comprehensive footer with links and newsletter
 
-## 🚀 Technologies Used
+## Technologies Used
 
-- **React 18** - Modern React with hooks
-- **Styled Components** - CSS-in-JS styling
-- **Framer Motion** - Smooth animations and transitions
-- **React Icons** - Beautiful icon library
-- **Responsive Design** - Mobile-first approach
+- **React 18**: Modern React with hooks
+- **Styled Components**: CSS-in-JS for styling
+- **Framer Motion**: Animation library for smooth transitions
+- **React Icons**: Icon library for UI elements
+- **React Router DOM**: Navigation and routing
 
-## 📱 Sections
+## Installation
 
-1. **Navigation** - Fixed navbar with smooth scrolling
-2. **Hero** - Stunning hero section with call-to-action
-3. **About** - Company information with statistics
-4. **Products** - Product showcase with categories
-5. **Services** - Service offerings with features
-6. **Contact** - Contact form and company information
-7. **Footer** - Comprehensive footer with newsletter signup
+1. Clone the repository:
+```bash
+git clone https://github.com/Ayazmax/cosmetics.git
+cd cosmetics
+```
 
-## 🛠️ Installation & Setup
+2. Install dependencies:
+```bash
+npm install
+```
 
-### Prerequisites
-- Node.js (version 14 or higher)
-- npm or yarn
+3. Start development server:
+```bash
+npm start
+```
 
-### Installation Steps
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd cosmetics-portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-   ```bash
-   npm start
-   ```
-
-4. **Open your browser**
-   Navigate to `http://localhost:3000`
-
-### Build for Production
-
+4. Build for production:
 ```bash
 npm run build
 ```
 
-## 📁 Project Structure
+## Deployment
+
+This project is configured for automatic deployment to Contabo VPS using GitHub Actions.
+
+### GitHub Actions Workflow
+
+The `.github/workflows/deploy.yml` file automatically:
+- Builds the project on push to main branch
+- Deploys to Contabo VPS
+- Installs dependencies
+- Builds the production version
+- Restarts the application
+
+### Manual Deployment to Contabo VPS
+
+1. **Connect to VPS:**
+```bash
+ssh root@147.78.131.10
+```
+
+2. **Navigate to project directory:**
+```bash
+cd /var/www/cosmetics
+```
+
+3. **Install dependencies:**
+```bash
+npm install
+```
+
+4. **Build project:**
+```bash
+npm run build
+```
+
+5. **Start with PM2:**
+```bash
+pm2 start npm --name "cosmetics" -- start
+```
+
+## Project Structure
 
 ```
 src/
 ├── components/          # React components
-│   ├── Navbar.js      # Navigation component
-│   ├── Hero.js        # Hero section
-│   ├── About.js       # About section
-│   ├── Products.js    # Products showcase
-│   ├── Services.js    # Services section
-│   ├── Contact.js     # Contact form
-│   └── Footer.js      # Footer component
+│   ├── Navbar.js       # Navigation bar
+│   ├── Hero.js         # Hero section
+│   ├── About.js        # About section
+│   ├── Products.js     # Products showcase
+│   ├── Services.js     # Services section
+│   ├── Contact.js      # Contact form
+│   └── Footer.js       # Footer
 ├── styles/             # Global styles
-│   └── GlobalStyles.js
-├── App.js             # Main app component
-└── index.js           # Entry point
+│   └── GlobalStyles.js # Global CSS and styled components
+├── App.js              # Main app component
+└── index.js            # Entry point
 ```
 
-## 🎯 Key Features
+## Company Information
 
-### Animations
-- **Scroll-triggered animations** using Framer Motion
-- **Hover effects** on interactive elements
-- **Smooth transitions** between states
-- **Staggered animations** for lists and grids
+**Luminary Beauty** - A premium cosmetics company offering high-quality products and professional services.
 
-### Responsiveness
-- **Mobile-first design** approach
-- **Flexible grid layouts** that adapt to screen sizes
-- **Touch-friendly interactions** for mobile devices
-- **Optimized typography** for all screen sizes
+## License
 
-### Performance
-- **Optimized animations** for smooth performance
-- **Lazy loading** of components
-- **Efficient re-renders** with React best practices
-- **Minimal bundle size** for fast loading
-
-## 🎨 Customization
-
-### Colors
-The main color scheme can be customized in the styled components:
-- Primary: `#ff6b6b` (Coral Red)
-- Secondary: `#ff8e8e` (Light Coral)
-- Accent: `#ff6b9d` (Pink)
-- Background: `#f8f9fa` to `#e9ecef` (Light Greys)
-- Text: `#2c3e50` (Dark Blue-Grey)
-
-### Typography
-- **Headings**: Playfair Display (serif)
-- **Body Text**: Poppins (sans-serif)
-
-### Animations
-All animations are configurable through Framer Motion variants in each component.
-
-## 📱 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## 🚀 Deployment
-
-### Netlify
-1. Build the project: `npm run build`
-2. Deploy the `build` folder to Netlify
-
-### Vercel
-1. Connect your GitHub repository
-2. Vercel will automatically build and deploy
-
-### GitHub Pages
-1. Build the project: `npm run build`
-2. Deploy the `build` folder to GitHub Pages
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🎉 Acknowledgments
-
-- **Framer Motion** for smooth animations
-- **React Icons** for beautiful icons
-- **Styled Components** for modern styling
-- **Google Fonts** for typography
+This project is private and proprietary.
 
 ---
 
-**Luminary Beauty** - Where beauty meets innovation ✨
-
-For any questions or support, please contact the development team.
+**Last Updated**: September 1, 2025 - Deployment test
